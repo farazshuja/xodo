@@ -1,0 +1,53 @@
+{
+  "name": "xo-do",
+  "version": "1.0.0",
+  "description": "Simple drag and drop based todo application",
+  "author": "Faraz Shuja <farazshuja@gmail.com>",
+  "private": true,
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "3333"
+    }
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint",
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "babel-jest": "^22.1.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "jest": "^22.1.4",
+    "jest-vue-preprocessor": "^1.3.1",
+    "md5": "^2.2.1",
+    "nuxt": "^1.0.0",
+    "querystring": "^0.2.0",
+    "vue-toast": "^3.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0"
+  },
+  "jest": {
+    "clearMocks": true,
+    "moduleNameMapper": {
+      "^vue$": "vue/dist/vue.common.js",
+      "^vuex$": "vuex/dist/vuex.common.js",
+      "^~(.*)$": "<rootDir>/$1"
+    },
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      ".*\\.(vue)$": "<rootDir>/node_modules/jest-vue-preprocessor"
+    }
+  }
+}

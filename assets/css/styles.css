@@ -1,0 +1,47 @@
+body {  
+  font-family: 'Titillium Web', sans-serif;
+  background: #3b5999;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.container--full {
+  min-height: 100vh;
+}
+
+.semi-bold { font-weight: 600; }
+.bold {font-weight: 700; }
+.label { color: #fff; font-weight: 400; }
+a {color: #b7a84d; font-size: 1rem;}
+a:hover { color: #b7a84d; text-decoration: underline; }
+
+.button.is-link {
+  background: #649bf5;
+}
+.button.is-primary {
+  background: #72b894;
+}
+
+.navbar {
+  background: transparent;
+}
+
+/* custom animations */
+.bounce-enter-active {
+  animation: bounce-in .7s;
+}
+.bounce-leave-active {
+  animation: bounce-in .7s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.20);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
